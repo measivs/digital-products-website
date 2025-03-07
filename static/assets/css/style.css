@@ -87,7 +87,6 @@ iframe {
   box-shadow: none !important;
   -ms-display: inline-flex;
   -webkit-display: inline-flex;
-  display: -webkit-inline-box;
   display: inline-flex;
   -ms-align-items: center;
   -webkit-align-items: center;
@@ -545,9 +544,12 @@ button,
   position: fixed;
   bottom: 30px;
   right: 30px;
-  -webkit-transition: background-color .3s,  opacity .5s, visibility .5s;
-  -o-transition: background-color .3s,  opacity .5s, visibility .5s;
-  transition: background-color .3s,  opacity .5s, visibility .5s;
+  -webkit-transition: background-color .3s, 
+ opacity .5s, visibility .5s;
+  -o-transition: background-color .3s, 
+ opacity .5s, visibility .5s;
+  transition: background-color .3s, 
+ opacity .5s, visibility .5s;
   opacity: 0;
   visibility: hidden;
   z-index: 1000;
@@ -611,7 +613,6 @@ button,
   stroke-width: 1.5px; }
 
 .sticky-header {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 99;
@@ -1274,8 +1275,6 @@ button,
   color: #FEFEFE;
   background-color: var(--primary-color);
   display: block;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
   max-width: fit-content; }
   .badge-label + .badge-label {
     margin-top: 8px;
@@ -1304,9 +1303,7 @@ button,
 .grid-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[12];
   grid-template-columns: repeat(12, 1fr);
-  -ms-grid-rows: (300px)[2];
   grid-template-rows: repeat(2, 300px);
   grid-gap: 24px; }
 
@@ -1359,9 +1356,7 @@ button,
 .grid-container-2 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[12];
   grid-template-columns: repeat(12, 1fr);
-  -ms-grid-rows: (250px)[2];
   grid-template-rows: repeat(2, 250px);
   grid-gap: 24px;
   grid-auto-flow: column; }
@@ -2768,7 +2763,6 @@ blockquote {
   line-height: 1.2;
   color: #000000;
   background-color: #FFAE00;
-  display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
@@ -3659,7 +3653,6 @@ blockquote {
   .testimonial-container {
     margin-top: 48px; }
   .filter-sort-wrapper {
-    position: -webkit-sticky;
     position: sticky;
     top: 65px;
     z-index: 99;
@@ -3921,8 +3914,6 @@ blockquote {
   .cart-item {
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: repeat 2, auto;
-    grid-template-rows: repeat 2, auto;
     -ms-grid-columns: 80px auto auto auto;
     grid-template-columns: 80px auto auto auto;
     -webkit-column-gap: 20px;
